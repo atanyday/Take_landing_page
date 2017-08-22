@@ -19,30 +19,37 @@ a {
     text-decoration: none;
   }
 }
-body {
-  color: #ffffff;
-}
+//body {
+//  color: #ffffff;
+//}
 // --------------------------------------------------------------------------------------------------------- /end global
 
 
 // -------------------------------------------------------------------------------------------------------------- HEADER
 #header {
-  background: url(../images/header_bg.jpg) no-repeat center center scroll;
+  padding-left: 0px;
+  padding-right: 0px;
   @include background-size(cover);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: scroll;
+  background-image: url(../images/bg-night.jpg);
   .logo {
     padding-top: 50px;
-    padding-bottom: 300px;
+    padding-bottom: 250px;
   }
-  .header-title {
+  #header-title-container {
+    font-style: italic;
     h1 {
       font-weight: lighter;
       font-size: 60px;
-      padding-bottom: 35px;
+      align-items: center;
+      padding-bottom: 10px;
     }
     p {
-      font-size: 13px;
+      font-size: 16px;
       line-height: 24px;
-      padding-bottom: 300px;
+      padding-bottom: 100px;
     }
   }
 }
