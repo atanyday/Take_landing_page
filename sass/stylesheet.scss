@@ -1,0 +1,62 @@
+@import "compass", "compass/reset", "compass/css3/font-face", "media-queries", "compass/css3/background-size", "compass/css3/border-radius", "compass/css3/transition";
+
+
+// ----------------------------------------------------------------------------------------------------- INCLUDE, EXTEND
+//@include font-face("???", font-files("???.ttf"));
+// ------------------------------------------------------------------------------------------------ /end include, extend
+
+
+// -------------------------------------------------------------------------------------------------------------- GLOBAL
+.no-margin {margin: 0 !important}
+.no-gutter > [class*='col-'] {
+  padding-right:0;
+  padding-left:0;
+}
+.left {float: left;}
+.right {float: right;}
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+body {
+  color: #ffffff;
+}
+// --------------------------------------------------------------------------------------------------------- /end global
+
+
+// -------------------------------------------------------------------------------------------------------------- HEADER
+#header {
+  background: url(../images/header_bg.jpg) no-repeat center center scroll;
+  @include background-size(cover);
+  .logo {
+    padding-top: 50px;
+    padding-bottom: 300px;
+  }
+  .header-title {
+    h1 {
+      font-weight: lighter;
+      font-size: 60px;
+      padding-bottom: 35px;
+    }
+    p {
+      font-size: 13px;
+      line-height: 24px;
+      padding-bottom: 300px;
+    }
+  }
+}
+// --------------------------------------------------------------------------------------------------------- /end header
+
+
+
+
+
+
+
+
+
+
+
+
+
