@@ -1,12 +1,27 @@
-# Created by .ignore support plugin (hsz.mobi)
-### Example user template template
-### Example user template
+# Exclude the Podspecs
+Pods/*
+Podfile.lock
 
-# IntelliJ project files
-.idea
-*.iml
-out
-gen
-.gitignore
-fonts/
-images/icons/
+# Exclude any PSD/AI source
+#*.psd
+#*.ai
+
+# Exclude generated files
+VersionX-revision.h
+
+# Exclude the build products
+build/*
+*.[oa]
+ 
+# Exclude temp nibs and swap files
+*~.nib
+*.swp
+*~
+
+# Other source repository archive directories (protects when importing)
+.hg
+.svn
+CVS
+
+.sass-cache/
+*.css.map
