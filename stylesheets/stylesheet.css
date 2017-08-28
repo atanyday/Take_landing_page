@@ -63,33 +63,66 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 10, ../sass/stylesheet.scss */
+/* line 64, icons/*.png */
+.icons-sprite, .icons-box, .icons-clock, .icons-cloud {
+  background-image: url('../images/icons-sa4f337cfa3.png');
+  background-repeat: no-repeat;
+}
+
+/* line 84, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-box {
+  background-position: 0 0;
+  height: 76px;
+  width: 84px;
+}
+
+/* line 84, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-clock {
+  background-position: 0 -86px;
+  height: 76px;
+  width: 84px;
+}
+
+/* line 84, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-cloud {
+  background-position: 0 -172px;
+  height: 76px;
+  width: 84px;
+}
+
+/* line 20, ../sass/stylesheet.scss */
 .no-margin {
   margin: 0 !important;
 }
 
-/* line 11, ../sass/stylesheet.scss */
+/* line 21, ../sass/stylesheet.scss */
 .no-gutter > [class*='col-'] {
   padding-right: 0;
   padding-left: 0;
 }
 
-/* line 15, ../sass/stylesheet.scss */
+/* line 25, ../sass/stylesheet.scss */
 .left {
   float: left;
 }
 
-/* line 16, ../sass/stylesheet.scss */
+/* line 26, ../sass/stylesheet.scss */
 .right {
   float: right;
 }
 
-/* line 18, ../sass/stylesheet.scss */
+/* line 28, ../sass/stylesheet.scss */
 a:hover {
   text-decoration: none;
 }
 
-/* line 29, ../sass/stylesheet.scss */
+/* line 32, ../sass/stylesheet.scss */
+body {
+  background: #2d2d2d;
+  cursor: pointer;
+}
+
+/* line 40, ../sass/stylesheet.scss */
 #header {
   padding-left: 0px;
   padding-right: 0px;
@@ -102,25 +135,84 @@ a:hover {
   background-attachment: scroll;
   background-image: url(../images/bg-night.jpg);
 }
-/* line 37, ../sass/stylesheet.scss */
+/* line 48, ../sass/stylesheet.scss */
 #header .logo {
   padding-top: 50px;
   padding-bottom: 250px;
 }
-/* line 41, ../sass/stylesheet.scss */
+/* line 52, ../sass/stylesheet.scss */
 #header #header-title-container {
   font-style: italic;
 }
-/* line 43, ../sass/stylesheet.scss */
+/* line 54, ../sass/stylesheet.scss */
 #header #header-title-container h1 {
   font-weight: lighter;
   font-size: 60px;
   align-items: center;
   padding-bottom: 10px;
 }
-/* line 49, ../sass/stylesheet.scss */
+/* line 60, ../sass/stylesheet.scss */
 #header #header-title-container p {
   font-size: 16px;
   line-height: 24px;
   padding-bottom: 100px;
+}
+
+/* line 69, ../sass/stylesheet.scss */
+#map-container {
+  height: 350px;
+  width: 100%;
+}
+/* line 72, ../sass/stylesheet.scss */
+#map-container h1 {
+  color: #6d6d6d;
+  font-size: 28px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-weight: 200;
+}
+
+/* line 82, ../sass/stylesheet.scss */
+#ocean {
+  width: 960px;
+  height: 560px;
+  position: absolute;
+  left: 235px;
+  top: 120px;
+  background-color: #6dacc0;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+/* line 92, ../sass/stylesheet.scss */
+#fluffy {
+  margin-top: 170px;
+  margin-left: 110px;
+}
+
+/* line 98, ../sass/stylesheet.scss */
+#blocks {
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+/* line 101, ../sass/stylesheet.scss */
+#blocks .container {
+  max-width: 850px;
+}
+/* line 104, ../sass/stylesheet.scss */
+#blocks h2 {
+  text-align: center;
+  font-size: 24px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  color: #848484;
+}
+/* line 111, ../sass/stylesheet.scss */
+#blocks p {
+  text-align: justify;
+  color: #6d6d6d;
 }

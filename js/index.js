@@ -1,5 +1,6 @@
-// ------------------------------------------------------------------------------------- CHANGE HEADER ACCORDING TO TIME
 function onLoad(){
+
+    // --------------------------------------------------------------------------------- CHANGE HEADER ACCORDING TO TIME
     var d = new Date();
     var currentHour = d.getHours();
 
@@ -24,7 +25,7 @@ function onLoad(){
         document.getElementById("header-title").innerHTML = "Good night!";
         document.getElementById("header-description").innerHTML = "Without the dark, we'd never see the stars";
     }
-    // ------------------------------------------------------------------------------------------------------- SWITCH METHOD
+    // --------------------------------------------------------------------------------------------------- SWITCH METHOD
     //var d = new Date();
     //var currentHour = d.getHours();
     //
@@ -75,42 +76,70 @@ function onLoad(){
     //        break;
     //    default: console.error("wtf!!! currentHour: " + currentHour);
     //}
-    // -------------------------------------------------------------------------------------------------- /end switch method
-    // -------------------------------------------------------------------------------- /end change header according to time
 
 
+
+    // ------------------------------------------------------------------------------------------------------------- PIN
+
+
+
+    var area = document.getElementsByTagName('map')[0];
+    area.onclick = function() {
+
+        var img = document.getElementById("pin");
+        //this.appendChild(img);
+
+        alert("Here will be pin");
+
+        return false; // returning false stops the link being followed
+    };
+
+
+
+    // -----------------------------------------------------------------------------------------------------------------
 }
+
+
 
 
 // ------------------------------------------------------------------------------------------------ HOVER IMAGE-MAP AREA
 
-//document.getElementById("the_us_shadow").style.visibility = "hidden";
-//document.getElementById("the_us_shadow").style.visibility = "visible";
-
-function onUsOut()   { $('#us_shadow').fadeOut('fast'); }
-function onUsOver()  { $('#us_shadow').fadeIn('fast');  }
-
-function onGreenlandOut()   { $('#greenland_shadow').fadeOut('fast'); }
-function onGreenlandOver()  { $('#greenland_shadow').fadeIn('fast');  }
-
-function onIcelandOut()   { $('#iceland_shadow').fadeOut('fast'); }
-function onIcelandOver()  { $('#iceland_shadow').fadeIn('fast');  }
-
-function onLaOut()   { $('#la_shadow').fadeOut('fast'); }
-function onLaOver()  { $('#la_shadow').fadeIn('fast');  }
-
-function onAustraliaOut()   { $('#australia_shadow').fadeOut('fast'); }
-function onAustraliaOver()  { $('#australia_shadow').fadeIn('fast');  }
-
-function onAfricaOut()   { $('#africa_shadow').fadeOut('fast'); }
-function onAfricaOver()  { $('#africa_shadow').fadeIn('fast');  }
-
-function onEuropeOut()   { $('#europe_shadow').fadeOut('fast'); }
-function onEuropeOver()  { $('#europe_shadow').fadeIn('fast');  }
-
-function onAsiaOut()   { $('#asia_shadow').fadeOut('fast'); }
-function onAsiaOver()  { $('#asia_shadow').fadeIn('fast');  }
+function onUsOut()   { $('#us_shadow').animate({'opacity':0}, 250); }
+function onUsOver()  { $('#us_shadow').animate({'opacity':1}, 250);  }
 
 
-// ------------------------------------------------------------------------------------------- /end hover image-map area
+
+
+function onGreenlandOut()   { $('#greenland_shadow').animate({'opacity':0}, 250); }
+function onGreenlandOver()  { $('#greenland_shadow').animate({'opacity':1}, 250);  }
+
+function onIcelandOut()   { $('#iceland_shadow').css('opacity', '0').animate({'opacity':0}, 250); }
+function onIcelandOver()  { $('#iceland_shadow').animate({'opacity':1}, 250); }
+
+function onLaOut()   { $('#la_shadow').animate({'opacity':0}, 250); }
+function onLaOver()  { $('#la_shadow').animate({'opacity':1}, 250);  }
+
+function onAustraliaOut()   { $('#australia_shadow').animate({'opacity':0}, 250); }
+function onAustraliaOver()  { $('#australia_shadow').animate({'opacity':1}, 250);  }
+
+function onAfricaOut()   { $('#africa_shadow').animate({'opacity':0}, 250); }
+function onAfricaOver()  { $('#africa_shadow').animate({'opacity':1}, 250);  }
+
+function onEuropeOut()   { $('#europe_shadow').animate({'opacity':0}, 250); }
+function onEuropeOver()  { $('#europe_shadow').animate({'opacity':1}, 250);  }
+
+function onAsiaOut()   { $('#asia_shadow').animate({'opacity':0}, 250); }
+function onAsiaOver()  { $('#asia_shadow').animate({'opacity':1}, 250);  }
+
+
+// ---------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
 

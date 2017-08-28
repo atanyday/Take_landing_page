@@ -1,6 +1,16 @@
 @import "compass", "compass/reset", "compass/css3/font-face", "media-queries", "compass/css3/background-size", "compass/css3/border-radius", "compass/css3/transition";
 
 
+// ------------------------------------------------------------------------------------------------------------- SPRITES
+@import "compass/utilities/sprites";
+$icons-layout: vertical;
+$icons-spacing: 10px;
+$icons-sprite-dimensions: true;
+@import "icons/*.png";
+@include all-icons-sprites;
+// ---------------------------------------------------------------------------------------------------------------------
+
+
 // ----------------------------------------------------------------------------------------------------- INCLUDE, EXTEND
 //@include font-face("???", font-files("???.ttf"));
 // ------------------------------------------------------------------------------------------------ /end include, extend
@@ -19,9 +29,10 @@ a {
     text-decoration: none;
   }
 }
-//body {
-//  color: #ffffff;
-//}
+body {
+  background: #2d2d2d;
+  cursor: pointer;
+}
 // --------------------------------------------------------------------------------------------------------- /end global
 
 
@@ -53,11 +64,55 @@ a {
     }
   }
 }
-// --------------------------------------------------------------------------------------------------------- /end header
+// ----------------------------------------------------------------------------------------------------------------- MAP
 
+#map-container {
+  height: 350px;
+  width: 100%;
+  h1 {
+    color: #6d6d6d;
+    font-size: 28px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-weight: 200;
+  }
+}
+#ocean {
+  width: 960px;
+  height: 560px;
+  position: absolute;
+  left: 235px;
+  top: 120px;
+  background-color: #6dacc0;
+  @include border-radius(50%);
+  border: 3px solid rgba(255, 255, 255, 0.40);
+}
+#fluffy {
+  margin-top: 170px;
+  margin-left: 110px;
+}
 
-
-
+// -------------------------------------------------------------------------------------------------------------- BLOCKS
+#blocks {
+  margin-top: 60px;
+  margin-bottom: 50px;
+  .container {
+    max-width: 850px;
+  }
+  h2 {
+    text-align: center;
+    font-size: 24px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: #848484;
+  }
+  p {
+    text-align: justify;
+    color: #6d6d6d;
+  }
+}
 
 
 
