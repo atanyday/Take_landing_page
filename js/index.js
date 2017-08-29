@@ -82,23 +82,71 @@ function onLoad(){
     // ------------------------------------------------------------------------------------------------------------- PIN
 
 
+    var fluffyPic = document.getElementById("puffle");
 
-    var area = document.getElementsByTagName('map')[0];
-    area.onclick = function() {
+    var usArea = document.getElementsByTagName('area')[0];
+    var greenlandArea = document.getElementsByTagName('area')[1];
+    var icelandArea = document.getElementsByTagName('area')[2];
+    var laArea = document.getElementsByTagName('area')[3];
+    var australiaArea = document.getElementsByTagName('area')[4];
+    var africaArea = document.getElementsByTagName('area')[5];
+    var europeArea = document.getElementsByTagName('area')[6];
+    var asiaArea = document.getElementsByTagName('area')[7];
 
-        var img = document.getElementById("pin");
-        //this.appendChild(img);
 
-        alert("Here will be pin");
+    usArea.onclick = function() {
+        fluffyPic.innerHTML = '<img src="images/puffleUs.png" />';
+        alert("Your choice is US!");
 
         return false; // returning false stops the link being followed
+    };
+
+    greenlandArea.onclick = function() {
+        fluffyPic.innerHTML = '<img src="images/puffleGreenland.png" />';
+        alert("Have a good time in Greenland!");
+        return false;
+    };
+
+    icelandArea.onclick = function() {
+        fluffyPic.innerHTML = '<img src="images/puffleIceland.png" />';
+        alert("Wow, seems you're going to Iceland!");
+        return false;
+    };
+
+    laArea.onclick = function() {
+        fluffyPic.innerHTML = '<img src="images/puffleLa.png" />';
+        alert("Los Angeles is gorgeous!");
+        return false;
+    };
+
+    australiaArea.onclick = function() {
+        fluffyPic.innerHTML = '<img src="images/puffleAustralia.png" />';
+        alert("Don't fight with kangaroo!");
+        return false;
+    };
+
+    africaArea.onclick = function() {
+        fluffyPic.innerHTML = '<img src="images/puffleAfrica.png" />';
+        alert("Interesting choice. See ya in Africa!");
+        return false;
+    };
+
+    europeArea.onclick = function() {
+        fluffyPic.innerHTML = '<img src="images/puffleEurope.png" />';
+        alert("Your next destination is Europe!");
+        return false;
+    };
+
+    asiaArea.onclick = function() {
+        fluffyPic.innerHTML = '<img src="images/puffleAsia.png" />';
+        alert("So many places to visit in Asia. Have a good time!");
+        return false;
     };
 
 
 
     // -----------------------------------------------------------------------------------------------------------------
 }
-
 
 
 

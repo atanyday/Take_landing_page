@@ -31,11 +31,7 @@ a {
 }
 body {
   background: #2d2d2d;
-  cursor: pointer;
 }
-// --------------------------------------------------------------------------------------------------------- /end global
-
-
 // -------------------------------------------------------------------------------------------------------------- HEADER
 #header {
   padding-left: 0px;
@@ -65,18 +61,24 @@ body {
   }
 }
 // ----------------------------------------------------------------------------------------------------------------- MAP
-
 #map-container {
   height: 350px;
   width: 100%;
+  color: #6d6d6d;
+  text-align: center;
+  area {
+    cursor: pointer;
+  }
   h1 {
-    color: #6d6d6d;
     font-size: 28px;
     text-transform: uppercase;
-    text-align: center;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     font-weight: 200;
+  }
+  p {
+    font-style: italic;
+
   }
 }
 #ocean {
@@ -84,16 +86,15 @@ body {
   height: 560px;
   position: absolute;
   left: 235px;
-  top: 120px;
+  top: 130px;
   background-color: #6dacc0;
   @include border-radius(50%);
   border: 3px solid rgba(255, 255, 255, 0.40);
 }
-#fluffy {
-  margin-top: 170px;
-  margin-left: 110px;
+#puffle {
+  margin-top: 180px;
+  margin-left: 160px;
 }
-
 // -------------------------------------------------------------------------------------------------------------- BLOCKS
 #blocks {
   margin-top: 60px;
@@ -113,6 +114,7 @@ body {
     color: #6d6d6d;
   }
 }
+// ---------------------------------------------------------------------------------------------------------------------
 
 
 
