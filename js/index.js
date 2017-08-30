@@ -1,3 +1,13 @@
+var usIsActive = false;
+var greenlandIsActive = false;
+var icelandIsActive = false;
+var laIsActive = false;
+var australiaIsActive = false;
+var africaIsActive = false;
+var europeIsActive = false;
+var asiaIsActive = false;
+
+
 function onLoad(){
 
     // --------------------------------------------------------------------------------- CHANGE HEADER ACCORDING TO TIME
@@ -79,7 +89,7 @@ function onLoad(){
 
 
 
-    // ------------------------------------------------------------------------------------------------------------- PIN
+// ------------------------------------------------------------------------------------------------------ IMAGE-MAP AREA
 
 
     var fluffyPic = document.getElementById("puffle");
@@ -94,100 +104,310 @@ function onLoad(){
     var asiaArea = document.getElementsByTagName('area')[7];
 
 
-    usArea.onclick = function() {
+
+    usArea.onclick = function(event) {
+        usIsActive = true;
+        greenlandIsActive = false;
+        icelandIsActive = false;
+        laIsActive = false;
+        australiaIsActive = false;
+        africaIsActive = false;
+        europeIsActive = false;
+        asiaIsActive = false;
+
+        $('#greenland_shadow').animate({'opacity':0}, 250);
+        $('#iceland_shadow').animate({'opacity':0}, 250);
+        $('#la_shadow').animate({'opacity':0}, 250);
+        $('#australia_shadow').animate({'opacity':0}, 250);
+        $('#africa_shadow').animate({'opacity':0}, 250);
+        $('#europe_shadow').animate({'opacity':0}, 250);
+        $('#asia_shadow').animate({'opacity':0}, 250);
+
         fluffyPic.innerHTML = '<img src="images/puffleUs.png" />';
         alert("Your choice is US!");
+
+        $("#pin").css({"left": event.x,"top": event.y} );
 
         return false; // returning false stops the link being followed
     };
 
     greenlandArea.onclick = function() {
+        usIsActive = false;
+        greenlandIsActive = true;
+        icelandIsActive = false;
+        laIsActive = false;
+        australiaIsActive = false;
+        africaIsActive = false;
+        europeIsActive = false;
+        asiaIsActive = false;
+
+        $('#us_shadow').animate({'opacity':0}, 250);
+        $('#iceland_shadow').animate({'opacity':0}, 250);
+        $('#la_shadow').animate({'opacity':0}, 250);
+        $('#australia_shadow').animate({'opacity':0}, 250);
+        $('#africa_shadow').animate({'opacity':0}, 250);
+        $('#europe_shadow').animate({'opacity':0}, 250);
+        $('#asia_shadow').animate({'opacity':0}, 250);
+
         fluffyPic.innerHTML = '<img src="images/puffleGreenland.png" />';
         alert("Have a good time in Greenland!");
+
+        $("#pin").css({"left": event.x,"top": event.y} );
         return false;
     };
 
     icelandArea.onclick = function() {
+        usIsActive = false;
+        greenlandIsActive = false;
+        icelandIsActive = true;
+        laIsActive = false;
+        australiaIsActive = false;
+        africaIsActive = false;
+        europeIsActive = false;
+        asiaIsActive = false;
+
+        $('#us_shadow').animate({'opacity':0}, 250);
+        $('#greenland_shadow').animate({'opacity':0}, 250);
+        $('#la_shadow').animate({'opacity':0}, 250);
+        $('#australia_shadow').animate({'opacity':0}, 250);
+        $('#africa_shadow').animate({'opacity':0}, 250);
+        $('#europe_shadow').animate({'opacity':0}, 250);
+        $('#asia_shadow').animate({'opacity':0}, 250);
+
         fluffyPic.innerHTML = '<img src="images/puffleIceland.png" />';
         alert("Wow, seems you're going to Iceland!");
+
+        $("#pin").css({"left": event.x,"top": event.y} );
+
         return false;
     };
 
     laArea.onclick = function() {
+        usIsActive = false;
+        greenlandIsActive = false;
+        icelandIsActive = false;
+        laIsActive = true;
+        australiaIsActive = false;
+        africaIsActive = false;
+        europeIsActive = false;
+        asiaIsActive = false;
+
+        $('#us_shadow').animate({'opacity':0}, 250);
+        $('#greenland_shadow').animate({'opacity':0}, 250);
+        $('#iceland_shadow').animate({'opacity':0}, 250);
+        $('#australia_shadow').animate({'opacity':0}, 250);
+        $('#africa_shadow').animate({'opacity':0}, 250);
+        $('#europe_shadow').animate({'opacity':0}, 250);
+        $('#asia_shadow').animate({'opacity':0}, 250);
+
         fluffyPic.innerHTML = '<img src="images/puffleLa.png" />';
         alert("Los Angeles is gorgeous!");
+
+        $("#pin").css({"left": event.x,"top": event.y} );
         return false;
     };
 
     australiaArea.onclick = function() {
+        usIsActive = false;
+        greenlandIsActive = false;
+        icelandIsActive = false;
+        laIsActive = false;
+        australiaIsActive = true;
+        africaIsActive = false;
+        europeIsActive = false;
+        asiaIsActive = false;
+
+        $('#us_shadow').animate({'opacity':0}, 250);
+        $('#greenland_shadow').animate({'opacity':0}, 250);
+        $('#iceland_shadow').animate({'opacity':0}, 250);
+        $('#la_shadow').animate({'opacity':0}, 250);
+        $('#africa_shadow').animate({'opacity':0}, 250);
+        $('#europe_shadow').animate({'opacity':0}, 250);
+        $('#asia_shadow').animate({'opacity':0}, 250);
+
         fluffyPic.innerHTML = '<img src="images/puffleAustralia.png" />';
         alert("Don't fight with kangaroo!");
+
+        $("#pin").css({"left": event.x,"top": event.y} );
         return false;
     };
 
     africaArea.onclick = function() {
+        usIsActive = false;
+        greenlandIsActive = false;
+        icelandIsActive = false;
+        laIsActive = false;
+        australiaIsActive = false;
+        africaIsActive = true;
+        europeIsActive = false;
+        asiaIsActive = false;
+
+        $('#us_shadow').animate({'opacity':0}, 250);
+        $('#greenland_shadow').animate({'opacity':0}, 250);
+        $('#iceland_shadow').animate({'opacity':0}, 250);
+        $('#la_shadow').animate({'opacity':0}, 250);
+        $('#australia_shadow').animate({'opacity':0}, 250);
+        $('#europe_shadow').animate({'opacity':0}, 250);
+        $('#asia_shadow').animate({'opacity':0}, 250);
+
         fluffyPic.innerHTML = '<img src="images/puffleAfrica.png" />';
         alert("Interesting choice. See ya in Africa!");
+
+        $("#pin").css({"left": event.x,"top": event.y} );
         return false;
     };
 
     europeArea.onclick = function() {
+        usIsActive = false;
+        greenlandIsActive = false;
+        icelandIsActive = false;
+        laIsActive = false;
+        australiaIsActive = false;
+        africaIsActive = false;
+        europeIsActive = true;
+        asiaIsActive = false;
+
+        $('#us_shadow').animate({'opacity':0}, 250);
+        $('#greenland_shadow').animate({'opacity':0}, 250);
+        $('#iceland_shadow').animate({'opacity':0}, 250);
+        $('#la_shadow').animate({'opacity':0}, 250);
+        $('#australia_shadow').animate({'opacity':0}, 250);
+        $('#africa_shadow').animate({'opacity':0}, 250);
+        $('#asia_shadow').animate({'opacity':0}, 250);
+
         fluffyPic.innerHTML = '<img src="images/puffleEurope.png" />';
         alert("Your next destination is Europe!");
+
+        $("#pin").css({"left": event.x,"top": event.y} );
         return false;
     };
 
     asiaArea.onclick = function() {
+        usIsActive = false;
+        greenlandIsActive = false;
+        icelandIsActive = false;
+        laIsActive = false;
+        australiaIsActive = false;
+        africaIsActive = false;
+        europeIsActive = false;
+        asiaIsActive = true;
+
+        $('#us_shadow').animate({'opacity':0}, 250);
+        $('#greenland_shadow').animate({'opacity':0}, 250);
+        $('#iceland_shadow').animate({'opacity':0}, 250);
+        $('#la_shadow').animate({'opacity':0}, 250);
+        $('#australia_shadow').animate({'opacity':0}, 250);
+        $('#africa_shadow').animate({'opacity':0}, 250);
+        $('#europe_shadow').animate({'opacity':0}, 250);
+
         fluffyPic.innerHTML = '<img src="images/puffleAsia.png" />';
         alert("So many places to visit in Asia. Have a good time!");
+
+        $("#pin").css({"left": event.x,"top": event.y} );
         return false;
     };
 
-
-
-    // -----------------------------------------------------------------------------------------------------------------
 }
 
 
 
-// ------------------------------------------------------------------------------------------------ HOVER IMAGE-MAP AREA
+function onUsOut()   {
+    if(usIsActive){
 
-function onUsOut()   { $('#us_shadow').animate({'opacity':0}, 250); }
+    } else {
+        $('#us_shadow').animate({'opacity':0}, 250);
+    }
+}
 function onUsOver()  { $('#us_shadow').animate({'opacity':1}, 250);  }
 
 
 
+function onGreenlandOut()   {
+    if(greenlandIsActive){
 
-function onGreenlandOut()   { $('#greenland_shadow').animate({'opacity':0}, 250); }
+    } else {
+        $('#greenland_shadow').animate({'opacity':0}, 250);
+    }
+}
 function onGreenlandOver()  { $('#greenland_shadow').animate({'opacity':1}, 250);  }
 
-function onIcelandOut()   { $('#iceland_shadow').css('opacity', '0').animate({'opacity':0}, 250); }
+
+
+function onIcelandOut()   {
+    if(icelandIsActive){
+
+    } else {
+        $('#iceland_shadow').css('opacity', '0').animate({'opacity':0}, 250);
+    }
+}
 function onIcelandOver()  { $('#iceland_shadow').animate({'opacity':1}, 250); }
 
-function onLaOut()   { $('#la_shadow').animate({'opacity':0}, 250); }
+
+
+function onLaOut()   {
+    if(laIsActive){
+
+    } else {
+        $('#la_shadow').animate({'opacity':0}, 250);
+    }
+}
 function onLaOver()  { $('#la_shadow').animate({'opacity':1}, 250);  }
 
-function onAustraliaOut()   { $('#australia_shadow').animate({'opacity':0}, 250); }
+
+
+function onAustraliaOut()   {
+    if(australiaIsActive){
+
+    } else {
+        $('#australia_shadow').animate({'opacity':0}, 250);
+    }
+}
 function onAustraliaOver()  { $('#australia_shadow').animate({'opacity':1}, 250);  }
 
-function onAfricaOut()   { $('#africa_shadow').animate({'opacity':0}, 250); }
+
+
+function onAfricaOut()   {
+    if(africaIsActive){
+
+    } else {
+        $('#africa_shadow').animate({'opacity':0}, 250);
+    }
+}
 function onAfricaOver()  { $('#africa_shadow').animate({'opacity':1}, 250);  }
 
-function onEuropeOut()   { $('#europe_shadow').animate({'opacity':0}, 250); }
+
+
+function onEuropeOut()   {
+    if(europeIsActive){
+
+    } else {
+        $('#europe_shadow').animate({'opacity':0}, 250);
+    }
+}
 function onEuropeOver()  { $('#europe_shadow').animate({'opacity':1}, 250);  }
 
-function onAsiaOut()   { $('#asia_shadow').animate({'opacity':0}, 250); }
+
+
+function onAsiaOut()   {
+    if(asiaIsActive){
+
+    } else {
+        $('#asia_shadow').animate({'opacity':0}, 250);
+    }
+}
 function onAsiaOver()  { $('#asia_shadow').animate({'opacity':1}, 250);  }
 
 
+
+
+function onMouseMove(event){
+    console.log("x: " + event.x + ", y: " + event.y);
+
+    $("#pin").css({"left": event.x,"top": event.y} );
+    //document.getElementById("pin").style.left = 13;
+    //document.getElementById("pin").clientTop = event.y;
+    //console.log(event.y)
+};
+
 // ---------------------------------------------------------------------------------------------------------------------
-
-
-
-
-
-
-
-
-
 
