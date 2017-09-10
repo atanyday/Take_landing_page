@@ -7,6 +7,7 @@ var africaIsActive = false;
 var europeIsActive = false;
 var asiaIsActive = false;
 
+var timeout = 250;
 
 function onLoad(){
 
@@ -68,7 +69,7 @@ function onLoad(){
     //    case 13:
     //    case 14:
     //    case 15:
-    //    case 16:
+    //    case 32:
     //    case 17:
     //        document.getElementById("header").style.backgroundImage = "url('images/bg-day.jpg')";
     //        document.getElementById("header-title-container").style = "color:#000000; padding-top:50px; padding-bottom:550px";
@@ -124,7 +125,10 @@ function onLoad(){
         $('#asia_shadow').animate({'opacity':0}, 250);
 
         fluffyPic.innerHTML = '<img src="images/puffleUs.png" />';
-        alert("Your choice is US!");
+
+        setTimeout(function(){
+            alert("Your choice is US!");
+        }, timeout);
 
         $("#pin").css({"left": event.x,"top": event.y} );
 
@@ -150,7 +154,10 @@ function onLoad(){
         $('#asia_shadow').animate({'opacity':0}, 250);
 
         fluffyPic.innerHTML = '<img src="images/puffleGreenland.png" />';
-        alert("Have a good time in Greenland!");
+
+        setTimeout(function(){
+            alert("Have a good time in Greenland!");
+        }, timeout);
 
         $("#pin").css({"left": event.x,"top": event.y} );
         return false;
@@ -175,7 +182,10 @@ function onLoad(){
         $('#asia_shadow').animate({'opacity':0}, 250);
 
         fluffyPic.innerHTML = '<img src="images/puffleIceland.png" />';
-        alert("Wow, seems you're going to Iceland!");
+
+        setTimeout(function(){
+            alert("Wow, seems you're going to Iceland!");
+        }, timeout);
 
         $("#pin").css({"left": event.x,"top": event.y} );
 
@@ -201,7 +211,10 @@ function onLoad(){
         $('#asia_shadow').animate({'opacity':0}, 250);
 
         fluffyPic.innerHTML = '<img src="images/puffleLa.png" />';
-        alert("Los Angeles is gorgeous!");
+
+        setTimeout(function(){
+            alert("Los Angeles is gorgeous!");
+        }, timeout);
 
         $("#pin").css({"left": event.x,"top": event.y} );
         return false;
@@ -226,7 +239,10 @@ function onLoad(){
         $('#asia_shadow').animate({'opacity':0}, 250);
 
         fluffyPic.innerHTML = '<img src="images/puffleAustralia.png" />';
-        alert("Don't fight with kangaroo!");
+
+        setTimeout(function(){
+            alert("Don't fight with kangaroo!");
+        }, timeout);
 
         $("#pin").css({"left": event.x,"top": event.y} );
         return false;
@@ -251,7 +267,10 @@ function onLoad(){
         $('#asia_shadow').animate({'opacity':0}, 250);
 
         fluffyPic.innerHTML = '<img src="images/puffleAfrica.png" />';
-        alert("Interesting choice. See ya in Africa!");
+
+        setTimeout(function(){
+            alert("Interesting choice. See ya in Africa!");
+        }, timeout);
 
         $("#pin").css({"left": event.x,"top": event.y} );
         return false;
@@ -276,7 +295,10 @@ function onLoad(){
         $('#asia_shadow').animate({'opacity':0}, 250);
 
         fluffyPic.innerHTML = '<img src="images/puffleEurope.png" />';
-        alert("Your next destination is Europe!");
+
+        setTimeout(function(){
+            alert("Your next destination is Europe!");
+        }, timeout);
 
         $("#pin").css({"left": event.x,"top": event.y} );
         return false;
@@ -301,7 +323,10 @@ function onLoad(){
         $('#europe_shadow').animate({'opacity':0}, 250);
 
         fluffyPic.innerHTML = '<img src="images/puffleAsia.png" />';
-        alert("So many places to visit in Asia. Have a good time!");
+
+        setTimeout(function(){
+            alert("So many places to visit in Asia. Have a good time!");
+        }, timeout);
 
         $("#pin").css({"left": event.x,"top": event.y} );
         return false;
@@ -399,7 +424,6 @@ function onAsiaOver()  { $('#asia_shadow').animate({'opacity':1}, 250);  }
 
 
 
-
 function onMouseMove(event){
     console.log("x: " + event.x + ", y: " + event.y);
 
@@ -409,5 +433,4 @@ function onMouseMove(event){
     //console.log(event.y)
 };
 
-// ---------------------------------------------------------------------------------------------------------------------
-
+// -------------------------------------------------------------------------------------------------------------- CANVAS
