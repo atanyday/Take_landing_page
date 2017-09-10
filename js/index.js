@@ -14,10 +14,6 @@ function onLoad(){
     // --------------------------------------------------------------------------------- CHANGE HEADER ACCORDING TO TIME
     var d = new Date();
     var currentHour = d.getHours();
-    //var currentHour = 8;
-    //var currentHour = 13;
-    //var currentHour = 18;
-    //var currentHour = 3;
 
     if (currentHour >= 6 && currentHour < 12) {
         document.getElementById("header").style.backgroundImage = "url('images/bg-morning.jpg')";
