@@ -1,7 +1,7 @@
 # Travelling_landing_page
 
  <br>
- => [Demo](https://rawgit.com/atanyday/travelling_landing_page/master/index.html) 
+ => [Demo](https://atanyday.github.io/travelling_landing_page/) 
 <br>
  => [Demo video](https://youtu.be/ohdrfAEFh1g) 
 <br> 
